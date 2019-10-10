@@ -1,0 +1,55 @@
+{
+  "name": "steven-jin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "animate.css": "^3.7.2",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-bokeh": "0.0.6",
+    "react-dom": "^16.8.6",
+    "react-modal": "^3.10.1",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "3.0.1",
+    "react-scroll-parallax": "^2.1.2",
+    "react-scroll-percentage": "^3.1.0",
+    "react-tabs": "^3.0.0",
+    "react-tooltip": "^3.11.1",
+    "react-typist": "^2.0.5"
+  },
+  "scripts": {
+    "prestart": "rimraf ./node_modules/react-bokeh/node_modules",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0"
+  }
+}

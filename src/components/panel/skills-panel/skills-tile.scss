@@ -1,0 +1,59 @@
+.skills-tile {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  //background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-weight: 100;
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.skills-tile:hover {
+  //transform: translatey(-2px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.skills-tile:active {
+  //transform: translatey(2px);
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.skills-tile-image {
+  width: 100px;
+  height: 100px;
+}
+
+.skills-tile-info {
+  width: calc(100% - 20px);
+  position: absolute;
+  left: 0px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.skills-tile-arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid white;
+  /* margin-bottom: -4px; */
+  z-index: 1;
+  position: absolute;
+  /* left: 20px; */
+  transform: translate(75px, -5px);
+}

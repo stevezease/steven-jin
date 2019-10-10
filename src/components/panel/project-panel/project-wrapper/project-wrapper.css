@@ -1,0 +1,85 @@
+.project-panel-wrapper {
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.project-panel-wrapper::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+/* .one {
+  background-color: red;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: yellow;
+} */
+
+.project-title {
+  font-size: 1.75em;
+  color: rgb(80, 80, 80);
+  margin-bottom: 15px;
+}
+
+.project-title-link {
+  color: silver;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-title-link:hover {
+  color: #0070c9;
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.project-panel-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  min-height: 500px;
+}
+
+.project-description {
+  width: 500px;
+  text-align: left;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.project-panel {
+  margin: 50px 0px;
+  padding-top: 50px;
+}
+.murderbridge-pic {
+  height: 350px;
+}
+
+.project-video {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+}
+.project-panel-header {
+  font-size: 6em;
+  color: black;
+  margin: 50px;
+}
+
+@media only screen and (max-width: 1225px) {
+  .murderbridge-title {
+    text-align: center;
+  }
+}

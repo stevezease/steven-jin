@@ -1,0 +1,19 @@
+.gravity-shell {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.gravity-video {
+  height: 100vh;
+  min-height: 500px;
+  object-fit: fill;
+  width: 100%;
+}
+
+.gravity-content {
+  position: absolute;
+  top: 0%;
+}

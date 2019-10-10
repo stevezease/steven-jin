@@ -1,0 +1,15 @@
+.react-bokeh-shell {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+.react-bokeh-content {
+  position: absolute;
+  top: 0%;
+}
+
+.react-bokeh-title {
+  font-size: 4rem;
+  color: white;
+}
