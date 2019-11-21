@@ -56,11 +56,16 @@
   bottom: -5px;
 }
 
+.react-light-tabs .react-tabs__tab-panel {
+  line-height: 25px;
+  color: hsl(0, 0%, 80%);
+}
 .react-tabs__tab-panel {
   display: none;
-  line-height: 25px;
+  line-height: 30px;
   color: hsl(0, 0%, 20%);
   font-size: 16px;
+  height: 75px;
 }
 
 .react-tabs__tab-panel--selected {

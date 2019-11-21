@@ -44,7 +44,11 @@ const MurderBridgePanel = () => {
             <TabPanel>
               <div>
                 <div>
-                  <a href="https://comicbook.com/gaming/2019/04/20/league-of-legends-aram-site-murder-bridge/">
+                  <a
+                    href="https://comicbook.com/gaming/2019/04/20/league-of-legends-aram-site-murder-bridge/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Featured on CBS's ComicBook.com
                   </a>
                 </div>

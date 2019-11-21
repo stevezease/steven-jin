@@ -31,14 +31,14 @@
   }
 
   .main-panel-button {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    height: 50px;
+    width: 125px;
+    border-radius: 5px;
     color: white;
     font-size: 27px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
     margin: 0px 10px;
@@ -46,7 +46,7 @@
 
     .main-panel-button-label {
       font-weight: bold;
-      font-size: 11px;
+      font-size: 14px;
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     }
     &:hover {
@@ -62,9 +62,24 @@
   }
   .resume {
     background: hsl(110, 30%, 60%);
-
+    position: relative;
+    overflow: hidden;
     &:hover {
       background: hsl(110, 50%, 45%);
+      .resume-button-icon {
+        transform: translateY(43px);
+      }
+    }
+    .resume-button-icon {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -31px;
+      height: 70px;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.25s ease-in;
+      padding-left: 3px;
     }
   }
 

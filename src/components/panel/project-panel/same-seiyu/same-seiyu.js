@@ -12,13 +12,13 @@ const SameSeiyuPanel = () => {
         <div className="project-description">
           <div className="murderbridge-title project-title">
             <a
-              href="https://www.SameSeiyu.com"
+              href="https://clever-morse-58ec40.netlify.com/"
               target="_blank"
               style={{ textDecoration: 'none' }}
               rel="noopener noreferrer"
             >
               <div className="project-title-link">
-                SameSeiyu.com
+                SameSeiyu
                 <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
               </div>
             </a>
@@ -30,21 +30,30 @@ const SameSeiyuPanel = () => {
             <TabList>
               <Tab>Overview</Tab>
               <Tab>Features</Tab>
-              <Tab>Details</Tab>
               <Tab>Tech Stack</Tab>
             </TabList>
 
             <TabPanel>
-              <h2>Overview</h2>
+              <div>
+                A visualization of mutual voice actor characters in React with
+                Python Scraper
+              </div>
             </TabPanel>
             <TabPanel>
-              <h2>Features</h2>
+              <div>
+                <div>
+                  Python Scraper gathers and ranks voice actor information
+                </div>
+                <div>Custom built dynamic caurosel</div>
+                <div>Hosted with CICD on Netlify</div>
+              </div>
             </TabPanel>
             <TabPanel>
-              <h2>Details</h2>
-            </TabPanel>
-            <TabPanel>
-              <h2>Tech Stack</h2>
+              <div>
+                <div>React</div>
+                <div>Python</div>
+                <div>Netlify</div>
+              </div>
             </TabPanel>
           </Tabs>
         </div>

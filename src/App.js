@@ -10,6 +10,10 @@ import ProjectPanel from './components/panel/project-panel/project-panel';
 import ExperiencePanel from './components/panel/experience-panel/experience-panel';
 import Modal from 'react-modal';
 import 'animate.css/animate.min.css';
+import ContactForm from './components/panel/main-panel/contact-form/contact-form';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeOpen, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ContactButton from './contact-button';
 
 class App extends React.Component {
   storyBoard = [
@@ -44,12 +48,19 @@ class App extends React.Component {
     this.state = {
       currentIndex: 0,
       currentOffSet: 0,
-      navBarText: 'Steven Jin'
+      navBarText: 'Steven Jin',
+      modalIsOpen: false,
+      contactHover: false
     };
   }
+  setModalIsOpen = val => {
+    this.setState({ modalIsOpen: val });
+  };
+  setContactHover = val => {
+    this.setState({ contactHover: val });
+  };
   setNavBarText = text => {
     if (text !== this.state.navBarText) {
-      console.log(text, this.state.navBarText);
       this.setState({
         navBarText: text
       });
@@ -103,6 +114,7 @@ class App extends React.Component {
           height={story.height}
           key={story.name}
           setNavBarText={this.setNavBarText}
+          setModalIsOpen={this.setModalIsOpen}
         />
       );
     });
@@ -125,11 +137,31 @@ class App extends React.Component {
   }
 
   render() {
+    const { modalIsOpen, contactHover } = this.state;
     return (
       <ParallaxProvider>
         <div className="App" id="app" ref={this.ref}>
           <NavBar text={this.state.navBarText} storyBoard={this.storyBoard} />
           {this.storyBoardGenerator()}
+          <ContactButton setModalIsOpen={this.setModalIsOpen} />
+          {/* <div
+            className="contact-button"
+            onMouseEnter={() => this.setContactHover(true)}
+            onMouseLeave={() => this.setContactHover(false)}
+            onClick={() => this.setModalIsOpen(true)}
+          >
+            {
+              <React.Fragment>
+                <FontAwesomeIcon
+                  icon={contactHover ? faEnvelopeOpen : faEnvelope}
+                />
+              </React.Fragment>
+            }
+          </div> */}
+          <ContactForm
+            modalIsOpen={modalIsOpen}
+            setModalIsOpen={this.setModalIsOpen}
+          />
         </div>
       </ParallaxProvider>
     );

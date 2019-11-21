@@ -11,7 +11,12 @@ function Panelify(WrappedComponent, panelStyleTransform) {
 
     handleScroll(e) {}
     render() {
-      const { percentScroll, height, setNavBarText } = this.props;
+      const {
+        percentScroll,
+        height,
+        setNavBarText,
+        setModalIsOpen
+      } = this.props;
       return (
         <div
           className="panel"
@@ -24,6 +29,7 @@ function Panelify(WrappedComponent, panelStyleTransform) {
           <WrappedComponent
             percentScroll={percentScroll}
             setNavBarText={setNavBarText}
+            setModalIsOpen={setModalIsOpen}
           />
         </div>
       );

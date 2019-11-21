@@ -89,7 +89,7 @@ const ReactBokehPanel = React.memo(() => {
               <div className="project-description">
                 <div className="project-title">
                   <a
-                    href="https://www.npmjs.com/package/react-bokeh"
+                    href="https://kind-wilson-41f501.netlify.com/"
                     target="_blank"
                     style={{ textDecoration: 'none' }}
                     rel="noopener noreferrer"
@@ -108,7 +108,12 @@ const ReactBokehPanel = React.memo(() => {
                   </span>
                 </div>
                 <Fade delay={1000}>
-                  <div className="react-light-tabs">
+                  <div
+                    className="react-light-tabs"
+                    style={{
+                      color: 'hsl(0, 100%, 20%) !important'
+                    }}
+                  >
                     <Tabs>
                       <TabList>
                         <Tab>Overview</Tab>
@@ -124,8 +129,11 @@ const ReactBokehPanel = React.memo(() => {
                       <TabPanel>
                         <div>
                           <div>
-                            <a href="https://kind-wilson-41f501.netlify.com/">
-                              Dynamic Helper tool and Demo Site on Netlify
+                            Dynamic Helper tool and Demo Site on Netlify
+                          </div>
+                          <div>
+                            <a href="https://www.npmjs.com/package/react-bokeh">
+                              Packaged and sharable on NPM
                             </a>
                           </div>
                           <div>

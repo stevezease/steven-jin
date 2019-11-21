@@ -38,21 +38,25 @@ const GravityPanel = React.memo(() => {
                       <TabList>
                         <Tab>Overview</Tab>
                         <Tab>Features</Tab>
-                        <Tab>Details</Tab>
                         <Tab>Tech Stack</Tab>
                       </TabList>
 
                       <TabPanel>
-                        <h2>Overview</h2>
+                        <div> User Interactible Music Visualizer in C</div>
                       </TabPanel>
                       <TabPanel>
-                        <h2>Features</h2>
+                        <div>
+                          <div>Self implemented physics engine</div>
+                          <div>Multitude of colors and settings</div>
+                          <div>WAV File compatible on Mac OS</div>
+                        </div>
                       </TabPanel>
                       <TabPanel>
-                        <h2>Details</h2>
-                      </TabPanel>
-                      <TabPanel>
-                        <h2>Tech Stack</h2>
+                        <div>
+                          <div>C</div>
+                          <div>Open Gl/Glut</div>
+                          <div>KissFFT</div>
+                        </div>
                       </TabPanel>
                     </Tabs>
                   </div>
