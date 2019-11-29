@@ -174,45 +174,46 @@ const SkillsPanel = React.memo(({ percentScroll, setNavBarText }) => {
   return (
     <React.Fragment>
       <div className="skills-panel">
-        <div
-          style={{
-            height: `${percentScroll === 1 ? 3 : 2}px`,
-            width: '250px',
-            backgroundColor: '#3b3b3b',
-            position: 'absolute',
-            top: '80px',
-            left: '50%',
-            marginLeft: `${percentScroll * -125}px`,
-            opacity: percentScroll * percentScroll
-          }}
-        />
-        <div
-          style={{
-            height: `${percentScroll === 1 ? 3 : 2}px`,
-            width: '250px',
-            backgroundColor: '#3b3b3b',
-            position: 'absolute',
-            top: '190px',
-            right: '50%',
-            marginRight: `${percentScroll * -125}px`,
-            opacity: percentScroll * percentScroll
-          }}
-        />
+        <div className="skills-panel-header-container">
+          <div
+            style={{
+              height: `${percentScroll === 1 ? 3 : 2}px`,
+              width: '250px',
+              backgroundColor: '#3b3b3b',
+              position: 'absolute',
+              top: '80px',
+              left: '50%',
+              marginLeft: `${Math.min(percentScroll * -125, -50)}px`,
+              opacity: percentScroll * percentScroll
+            }}
+          />
+          <div
+            style={{
+              height: `${percentScroll === 1 ? 3 : 2}px`,
+              width: '250px',
+              backgroundColor: '#3b3b3b',
+              position: 'absolute',
+              top: '190px',
+              right: '50%',
+              marginRight: `${Math.min(percentScroll * -125, -50)}px`,
+              opacity: percentScroll * percentScroll
+            }}
+          />
 
-        <h1
-          className="skill-panel-header"
-          style={{
-            opacity: percentScroll * percentScroll,
-            color: `${
-              percentScroll === 1
-                ? 'rgba(0, 0, 0, 0.75)'
-                : 'rgba(0, 0, 0, 0.65)'
-            }`
-          }}
-        >
-          SKILLS
-        </h1>
-
+          <h1
+            className="skill-panel-header"
+            style={{
+              opacity: percentScroll * percentScroll,
+              color: `${
+                percentScroll === 1
+                  ? 'rgba(0, 0, 0, 0.75)'
+                  : 'rgba(0, 0, 0, 0.65)'
+              }`
+            }}
+          >
+            SKILLS
+          </h1>
+        </div>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

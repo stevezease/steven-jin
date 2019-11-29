@@ -67,3 +67,11 @@
   background: #069;
   width: 100% !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    .item {
+      padding: 0px 10px;
+    }
+  }
+}

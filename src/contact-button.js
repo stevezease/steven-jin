@@ -26,15 +26,6 @@ const ContactButton = ({ setModalIsOpen }) => {
             </span>
           </div>
           <div className="contact-button-node">
-            <a
-              href="https://github.com/stevezease/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />{' '}
-            </a>
-          </div>
-          <div className="contact-button-node">
             {' '}
             <a
               href="https://www.linkedin.com/in/steven-jin-58781a89/"
@@ -42,6 +33,15 @@ const ContactButton = ({ setModalIsOpen }) => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />{' '}
+            </a>
+          </div>
+          <div className="contact-button-node">
+            <a
+              href="https://github.com/stevezease/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />{' '}
             </a>
           </div>
         </div>

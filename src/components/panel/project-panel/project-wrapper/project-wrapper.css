@@ -83,3 +83,14 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .project-video {
+    box-shadow: none !important;
+    width: 100vw;
+  }
+  .project-description {
+    font-size: 14px;
+    width: 100vw !important;
+  }
+}
