@@ -26,7 +26,10 @@ const GravityPanel = React.memo(() => {
                   >
                     <div className="project-title-link">
                       <Fade delay={1000}>
-                        <a href="../../../../assets/Gravity2Final.zip" download>
+                        <a
+                          href="https://github.com/stevezease/steven-jin/raw/master/assets/Gravity2Final.zip"
+                          download
+                        >
                           <span className="react-bokeh-title">
                             Gravity2{' '}
                             <FontAwesomeIcon icon={faDownload} size="xs" />

@@ -85,7 +85,7 @@ const MainPanel = React.memo(
                 onMouseLeave={() => setResumeHover(false)}
               >
                 <a
-                  href="../../../../assets/Resume_Steven_Jin_2019.pdf"
+                  href="https://github.com/stevezease/steven-jin/raw/master/assets/Resume_Steven_Jin_2019.pdf"
                   download
                 >
                   <div style={{ width: '35px' }}>
