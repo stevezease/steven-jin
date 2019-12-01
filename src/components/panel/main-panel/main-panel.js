@@ -84,7 +84,10 @@ const MainPanel = React.memo(
                 onMouseEnter={() => setResumeHover(true)}
                 onMouseLeave={() => setResumeHover(false)}
               >
-                <React.Fragment>
+                <a
+                  href="../../../../assets/Resume_Steven_Jin_2019.pdf"
+                  download
+                >
                   <div style={{ width: '35px' }}>
                     <div className="resume-button-icon">
                       <FontAwesomeIcon icon={faDownload} />
@@ -92,7 +95,7 @@ const MainPanel = React.memo(
                     </div>
                   </div>
                   <div className="main-panel-button-label"> Resume </div>
-                </React.Fragment>
+                </a>
               </div>
               <div
                 className="main-panel-button contact"

@@ -3,6 +3,7 @@
   padding: 20px 20px 0px 20px;
   box-sizing: border-box;
   //background-color: hsl(0, 0%, 98%);
+  cursor: pointer;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.25s linear;
@@ -19,10 +20,17 @@
   }
   .experience-entry-header {
     font-size: 1.5em;
-    line-height: 2.5em;
+    line-height: 1.5em;
+    margin: 10px 0px;
     display: flex;
     justify-content: space-between;
     color: hsl(0, 0%, 40%);
+    .experience-entry-header-project {
+      text-align: left;
+    }
+    .experience-entry-header-date {
+      text-align: right;
+    }
   }
   .experience-entry-expand-icon {
     transform: rotate(180deg);
@@ -36,7 +44,26 @@
   }
   .experience-entry-content {
     text-align: left;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .experience-entry {
+    font-size: 13px;
+
+    .experience-entry-content {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-entry {
+    font-size: 10px;
+    .experience-entry-content {
+      margin-bottom: 10px;
+    }
   }
 }

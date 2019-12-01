@@ -13,7 +13,7 @@ const ContactButton = ({ setModalIsOpen }) => {
   return (
     <div className="contact-button">
       <div className="contact-button-container">
-        <div className="contact-button-content">
+        <div className="contact-button-content" tabIndex="0">
           <div
             className="contact-button-node"
             onClick={() => setModalIsOpen(true)}

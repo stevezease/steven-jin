@@ -26,15 +26,15 @@ const ExperienceEntry = ({ data, index }) => {
         </div>
       </div>
       <div className="experience-entry-header">
-        <div>{data.project}</div>
-        <div>{data.date}</div>
+        <div className="experience-entry-header-project">{data.project}</div>
+        <div className="experience-entry-header-date">{data.date}</div>
       </div>
       {expanded && (
-        <div className="experience-entry-body">
+        <ul className="experience-entry-body">
           {data.responsibilities.map(responsibility => (
-            <div className="experience-entry-content"> {responsibility} </div>
+            <li className="experience-entry-content">{responsibility}</li>
           ))}
-        </div>
+        </ul>
       )}
       <div className="experience-entry-footer">
         <div

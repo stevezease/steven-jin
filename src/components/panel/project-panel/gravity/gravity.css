@@ -9,7 +9,7 @@
 .gravity-video {
   height: 100vh;
   min-height: 500px;
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
 }
 

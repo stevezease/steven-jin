@@ -9,6 +9,13 @@
   top: 0%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
 .react-bokeh-title {
   font-size: 2em;
   color: white;

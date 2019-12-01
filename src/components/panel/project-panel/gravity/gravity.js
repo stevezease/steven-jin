@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Fade from 'react-reveal/Fade';
 import Gravity2 from '../../../../res/gravity2.webm';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../../../../../node_modules/react-bokeh/src/bokeh.css';
 import './gravity.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GravityPanel = React.memo(() => {
   return (
@@ -24,7 +26,12 @@ const GravityPanel = React.memo(() => {
                   >
                     <div className="project-title-link">
                       <Fade delay={1000}>
-                        <span className="react-bokeh-title">Gravity2</span>
+                        <a href="../../../../assets/Gravity2Final.zip" download>
+                          <span className="react-bokeh-title">
+                            Gravity2{' '}
+                            <FontAwesomeIcon icon={faDownload} size="xs" />
+                          </span>
+                        </a>
                       </Fade>
                     </div>
                   </a>

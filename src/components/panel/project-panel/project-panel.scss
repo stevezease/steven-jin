@@ -3,7 +3,7 @@
   padding-top: 50px;
   .project-title {
     font-size: 1.75em;
-    color: rgb(80, 80, 80);
+    color: #828282;
     margin-bottom: 15px;
 
     .project-title-link {
@@ -23,6 +23,7 @@
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     height: 100vh;
+    min-height: 700px;
     align-items: center;
     .project-description {
       width: 500px;

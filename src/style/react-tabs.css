@@ -4,7 +4,7 @@
 }
 
 .react-tabs__tab-list {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   margin: 0 0 10px;
   padding: 0;
   display: flex;
@@ -25,7 +25,7 @@
   padding: 6px 0px;
   cursor: pointer;
   outline: none;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.35);
   transition: all 0.2s linear;
 }
 .react-light-tabs {
@@ -73,7 +73,7 @@
 }
 
 .react-light-tabs .react-tabs__tab {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .react-light-tabs .react-tabs__tab--selected {
@@ -88,5 +88,5 @@
 }
 
 .react-light-tabs .react-tabs__tab-list {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
