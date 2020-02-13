@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './components/nav-bar/nav-bar';
 import MainPanel from './components/panel/main-panel/main-panel';
+import ReactGA from 'react-ga';
 import './App.scss';
 import SkillsPanel from './components/panel/skills-panel/skills-panel';
 import { throttle } from 'lodash';
@@ -45,6 +46,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.ref = React.createRef();
+    this.initializeReactGA();
     this.state = {
       currentIndex: 0,
       currentOffSet: 0,
@@ -56,6 +58,12 @@ class App extends React.Component {
   setModalIsOpen = val => {
     this.setState({ modalIsOpen: val });
   };
+
+  initializeReactGA = () => {
+    ReactGA.initialize('UA-138252539-3');
+    ReactGA.pageview('/home');
+  };
+
   setContactHover = val => {
     this.setState({ contactHover: val });
   };
